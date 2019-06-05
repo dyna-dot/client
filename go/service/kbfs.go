@@ -41,7 +41,7 @@ func NewKBFSHandler(xp rpc.Transporter, g *libkb.GlobalContext, cg *globals.Chat
 }
 
 func (h *KBFSHandler) FSOnlineStatusChangedEvent(_ context.Context, online bool) error {
-	h.G().NotifyRouter.HandleFSOnlineStatusChanged(online)
+	// h.G().NotifyRouter.HandleFSOnlineStatusChanged(online) // xxx
 	return nil
 }
 

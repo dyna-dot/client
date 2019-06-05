@@ -49,6 +49,12 @@ export default function(state: Types.State = initialState, action: ProfileGen.Ac
       return updateUsername(state)
     case ProfileGen.revokeFinish:
       return state.merge({revokeError: actionHasError(action) ? action.payload.error : ''})
+    case ProfileGen.submitBlockUser:
+      console.log(`xxx reducer s user ${'waiting'}`)
+      return state.merge({blockUserModal: 'waiting'})
+    case ProfileGen.finishBlockUser:
+      console.log(`xxx reducer f user ${actionHasError(action) ? {error: action.payload.error} : null}`)
+      return state.merge({blockUserModal: actionHasError(action) ? {error: action.payload.error} : null})
     case ProfileGen.updateProofText:
       return state.merge({proofText: action.payload.proof})
     case ProfileGen.updateProofStatus:
