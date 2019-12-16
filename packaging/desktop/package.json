@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "appdmg": "0.5.2",
+    "appdmg": "0.6.0",
     "nan": "2.12.1"
   },
   "resolutions": {
