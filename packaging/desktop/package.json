@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "appdmg": "0.5.2",
-    "nan": "2.12.1"
+    "nan": "2.14.0"
   },
   "resolutions": {
     "**/nan": "2.12.1"
